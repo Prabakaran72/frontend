@@ -82,7 +82,7 @@ function Login() {
     setdatasending(true);
 
     const loginData = {
-      user_id: userNameState.value,
+      name: userNameState.value,
       password: passwordState.value,
     };
 

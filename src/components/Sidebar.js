@@ -253,7 +253,8 @@ function Sidebar() {
        {/* Divider */}
        <hr className="sidebar-divider my-0" />
       {/* Nav Item - Pages Collapse Menu */}
-      <li className="nav-item">
+      <motion.li className="nav-item" 
+         animate={{x:0}} initial={{x:-300}} transition={{type: 'tween', delay: 0.3 }}>
         <Link
           className="nav-link collapsed"
           to="#"
@@ -284,7 +285,7 @@ function Sidebar() {
             </NavLink>           
           </div>
         </div>
-      </li>
+      </motion.li>
 
       <motion.div className="text-center d-none d-md-inline">
         <button className="rounded-circle border-0" id="sidebarToggle"></button>
